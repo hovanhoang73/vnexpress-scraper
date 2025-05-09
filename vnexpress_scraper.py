@@ -234,14 +234,14 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 # ***MỤC 6: Đặt lịch chạy hàng ngày vào lúc 6h sáng***
-def job():
-    print("Bắt đầu thu thập dữ liệu lúc 6h sáng...")
-    scrape_vnexpress_khcn_all_pages()
+#def job():
+#   print("Bắt đầu thu thập dữ liệu lúc 6h sáng...")
+#  scrape_vnexpress_khcn_all_pages()
 
- #Đặt lịch chạy vào 6h sáng hằng ngày
-    schedule.every().day.at("06:00").do(job)
+# Đặt lịch chạy vào 6h sáng hằng ngày
+#schedule.every().day.at("06:00").do(job)
 
-    print("Đã đặt lịch chạy vào 6h sáng hằng ngày. Đang chờ...")
-while True:
-    schedule.run_pending()
-    time.sleep(60)  # Kiểm tra lịch mỗi phút
+#print("Đã đặt lịch chạy vào 6h sáng hằng ngày. Đang chờ...")
+#while True:
+#   schedule.run_pending()
+#    time.sleep(60)  # Kiểm tra lịch mỗi phút
